@@ -2,7 +2,7 @@ GET http://localhost:3000/mascotas HTTP/1.1
 
 ###
 
-GET http://localhost:3000/mascotas/3 HTTP/1.1
+GET http://localhost:3000/mascotas/5 HTTP/1.1
 
 ###
 
@@ -12,7 +12,7 @@ Content-Type: application/json
 {
     "Name":"phillips",
     "Raza":"gato gordo",
-    "Age": 2
+    "Age": 3
 }
 
 
@@ -25,11 +25,11 @@ Content-Type: application/json
 {
     "Name":"phillips",
     "Raza":"gato",
-    "Age": 2
+    "Age": 1
 }
 
 ###
 
-DELETE http://localhost:3000/mascotas/10 HTTP/1.1
+DELETE http://localhost:3000/mascotas/7 HTTP/1.1
 
 

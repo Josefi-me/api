@@ -82,8 +82,8 @@ app.put("/mascotas/:Id", (req,res) => {
 app.delete("/mascotas/:Id", (req, res) => {
     const data=readData();
     const Id= parseInt(req.params.Id);//?
-    const mascotasIndex= data.mascotas.findIndex((mascotas) => mascotas.Id === Id); //?
-    data.mascotas.splice(mascotasIndex, 1); //me permite borrar pasandole el (index) ? jddujhjs
+    const mascotasIndex= data.mascotas.findIndex((mascotas) => mascotas.Id === Id); 
+    data.mascotas.splice(mascotasIndex, 1); 
     writeData(data);
     res.json({message:"elemento borrado"});
 });
